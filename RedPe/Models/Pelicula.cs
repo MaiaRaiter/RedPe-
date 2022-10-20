@@ -8,7 +8,7 @@ namespace RedPe.Models
  
     public class Pelicula
     {
-        private int _idCategoria;
+        private int _idPelicula;
         private string _nombre;
          private string _foto;
         private string _director;
@@ -18,10 +18,10 @@ namespace RedPe.Models
           private string _trailer;
         
 
-        public Pelicula( int pIdCategoria, string pNombre, string pFoto,string pDirector,int pIdReseña,string pSintesis,string pTrailer)
+        public Pelicula( int pIdPelicula, string pNombre, string pFoto,string pDirector,int pIdReseña,string pSintesis,string pTrailer)
         {
          
-            _idCategoria = pIdCategoria;
+            _idPelicula = pIdPelicula;
             _nombre = pNombre;
             _foto=pFoto;
             _director=pDirector;
@@ -32,7 +32,7 @@ namespace RedPe.Models
 
         public Pelicula()
         {
-            _idCategoria = 0;
+            _idPelicula = 0;
             _nombre = "";
             _foto="";
             _director="";
@@ -43,11 +43,11 @@ namespace RedPe.Models
 
 
 
-        public int IdCategoria
+        public int IdPelicula
         {
         
-          get {return _idCategoria;}
-          set {_idCategoria=value;}
+          get {return _idPelicula;}
+          set {_idPelicula=value;}
 
         }
         public string Nombre
