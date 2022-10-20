@@ -13,7 +13,6 @@ namespace RedPe.Models
          private string _foto;
         private string _director;
         private int _idReseña;
-    
         private string _sintesis;
           private string _trailer;
         
