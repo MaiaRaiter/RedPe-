@@ -13,9 +13,10 @@ namespace RedPe.Models
          private string _titulo;
         private int _cantLikes;
         private string _contenido;
+         private string _foto;
         
 
-        public Reseña( int pIdReseña, string pNombreDelUsuario, string pTitulo, int pCantLikes ,string pContenido)
+        public Reseña( int pIdReseña, string pNombreDelUsuario, string pTitulo, int pCantLikes ,string pContenido, string pFoto)
         {
          
             _idReseña = pIdReseña;
@@ -23,6 +24,7 @@ namespace RedPe.Models
             _titulo=pTitulo;
             _cantLikes=pCantLikes;
             _contenido=pContenido;
+            _foto=pFoto;
         }
 
         public Reseña()
@@ -32,6 +34,7 @@ namespace RedPe.Models
             _titulo="";
             _cantLikes=0;
             _contenido="";
+            _foto="";
 
         }
 
@@ -70,6 +73,13 @@ namespace RedPe.Models
         
           get {return _contenido;}
           set {_contenido=value;}
+
+        }
+          public string Foto
+        {
+        
+          get {return _foto;}
+          set {_foto=value;}
 
         }
        
