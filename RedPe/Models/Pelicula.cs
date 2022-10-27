@@ -12,19 +12,18 @@ namespace RedPe.Models
         private string _nombre;
          private string _foto;
         private string _director;
-        private int _idReseña;
+  
         private string _sintesis;
           private string _trailer;
         
 
-        public Pelicula( int pIdPelicula, string pNombre, string pFoto,string pDirector,int pIdReseña,string pSintesis,string pTrailer)
+        public Pelicula( int pIdPelicula, string pNombre, string pFoto,string pDirector,string pSintesis,string pTrailer)
         {
          
             _idPelicula = pIdPelicula;
             _nombre = pNombre;
             _foto=pFoto;
             _director=pDirector;
-            _idReseña=pIdReseña;
             _sintesis=pSintesis;
             _trailer=pTrailer;
         }
@@ -35,7 +34,6 @@ namespace RedPe.Models
             _nombre = "";
             _foto="";
             _director="";
-            _idReseña=0;
             _sintesis="";
             _trailer="";
         }
@@ -70,13 +68,7 @@ namespace RedPe.Models
           set {_director=value;}
 
         }
-          public int IdReseña
-        {
-        
-          get {return _idReseña;}
-          set {_idReseña=value;}
-
-        }
+    
         public string Sintesis
         {
         
